@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<!-- esta etiqueta indica que este documento es HTML5 -->
+<!-- La mayoría de las etiquetas HTML abren y cierran en líneas distintas.
+Esto se hizo así para que podamos poner otras etiquetas dentro de una etiqueta padre -->
+<html>
+  <!-- Head y Body están contenidos dentro de HTML -->
+
+  <head>
+    <title>Ejercicio 1</title>
+  </head>
+
+  <body>
+    <form action="#">
+      <!-- Dentro del body se pondrán las etiqueta que creen elementos visible -->
+      <!-- Las etiquetas H nos permiten resaltar un texto... se usan comunmente para los títulos y subtítulos -->
+      <h1>Formulario</h1>
+      <h2>Formulario</h2>
+      <!--  <h3>Formulario</h3>
+        <h4>Formulario</h4>
+        <h5>Formulario</h5>
+        <h6>Formulario</h6> -->
+      <!-- Los DIVs generan un salto de línea porque ocupan todo el ancho de la página.
+        Por lo tanto, nos servirán para ordenar nuestros elementos -->
+      <div>
+        <label>Nombre:</label>
+        <!-- Siempre que usemos input debemos darle el atributo type para indicar
+        el tipo de input que se agregará a la página -->
+        <input type="text" value="Franco" name="nombre" />
+        <!-- El atributo NAME tiene mucha importancia! Nos servirá después para enviar los datos del
+        elemento HTML al servidor.. solo viajan los datos de los elementos que tengan un NAME -->
+      </div>
+      <div>
+        <label>Apellido:</label>
+        <input type="text" value="Cea Delgado" name="apellido" />
+      </div>
+      <div>
+        <label>Edad:</label>
+        <!-- Number nos servirá para validar que el input sea solo numérico -->
+        <input type="number" min="0" />
+      </div>
+
+      <div>
+        <!-- Cuando necesitemos seleccionar una opción entre muchas (más de 3), es necesario ocupar una lista
+        desplegable.. SELECT contiene muchos OPTIONs, que tendrán las opciones seleccionables -->
+        Ciudad:
+        <select>
+            <option>NO SELECCIONADO</option>
+            <option>Temuco</option>
+            <option>Valdivia</option>
+            <option>Osorno</option>
+            <option>Puerto Montt</option>
+        </select>
+      </div>
+
+      <!-- Bajo la lógica de que los NAMEs siempre tienen que ser distintos para que se envíen sus valores...
+    si ponemos el mismo nombre a los radios, los haremos distinguibles al momento de seleccionar y solo enviará el clickeado-->
+      <input type="radio" name="beca" /> Becado
+      <input type="radio" name="beca" /> No Becado
+
+      
+      <h3>Intereses</h3>
+      <div>
+        <input type="checkbox" /> Música
+        <input type="checkbox" /> Videojuegos
+        <input type="checkbox" /> Programación
+        <input type="checkbox" /> Deportes
+      </div>
+
+      <h3>Comentarios</h3>
+      <textarea cols="40" rows="10"></textarea>
+
+      <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellat
+        consequuntur quos facilis voluptatibus tempora in sequi eum suscipit
+        unde excepturi. Inventore, voluptatibus. Cumque explicabo inventore
+        aperiam maxime repellendus odit quae.
+      </p>
+
+      <input type="button" value="Enviar Datos" />
+      <button type="submit">Enviar Datos</button>
+    </form>
+  </body>
+</html>

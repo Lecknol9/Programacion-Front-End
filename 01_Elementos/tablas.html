@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tablas en HTML</title>
+  </head>
+  <body>
+    <table border="1">
+      <!-- Aunque un navegador interpretará correctamente el dibujo de una tabla sin necesidad
+        de que pongamos thead ni tbody, no poder estas etiquetas nos penará en el futuro -->
+      <thead>
+        <!-- Para crear celdas en la tabla SIEMPRE partiremos por la FILA -->
+        <tr>
+          <!-- Las columnas son creadas con TH o TD.. TH para las cabeceras -->
+          <th>Nombre</th>
+          <th>Apellido</th>
+          <th>Edad</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Franco</td>
+          <td>Cea</td>
+          <td>20</td>
+        </tr>
+        <tr>
+          <td>Benjamín</td>
+          <td>Delgado</td>
+          <td>17</td>
+        </tr>
+        <tr>
+          <td>Joaquín</td>
+          <td>Soto</td>
+          <td>19</td>
+        </tr>
+        <tr>
+          <td>Felipe</td>
+          <td>Muñoz</td>
+          <td>22</td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>
